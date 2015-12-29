@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E240D732D7A45D4FBCF7B693 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCF66EBAA047FE49D859A110 /* Pods.framework */; };
 		F510F6921BF9FAFB0042175C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F510F6911BF9FAFB0042175C /* AppDelegate.swift */; };
 		F510F6941BF9FAFB0042175C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F510F6931BF9FAFB0042175C /* ViewController.swift */; };
 		F510F6971BF9FAFB0042175C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F510F6951BF9FAFB0042175C /* Main.storyboard */; };
@@ -43,6 +44,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6584C3306C415EC06BAF3358 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		81CC9A8017E35D6304F1341C /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		DCF66EBAA047FE49D859A110 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F510F68E1BF9FAFB0042175C /* QEDSWift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QEDSWift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F510F6911BF9FAFB0042175C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F510F6931BF9FAFB0042175C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -72,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E240D732D7A45D4FBCF7B693 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +97,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2B94D0A1B84130A68442B5EF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DCF66EBAA047FE49D859A110 /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F510F6851BF9FAFB0042175C = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +112,8 @@
 				F510F6A81BF9FAFB0042175C /* QEDSWiftTests */,
 				F510F6B31BF9FAFB0042175C /* QEDSWiftUITests */,
 				F510F68F1BF9FAFB0042175C /* Products */,
+				F61EE4D3FFE2475415AD2D55 /* Pods */,
+				2B94D0A1B84130A68442B5EF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -192,6 +207,15 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
+		F61EE4D3FFE2475415AD2D55 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6584C3306C415EC06BAF3358 /* Pods.debug.xcconfig */,
+				81CC9A8017E35D6304F1341C /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -199,9 +223,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F510F6B91BF9FAFB0042175C /* Build configuration list for PBXNativeTarget "QEDSWift" */;
 			buildPhases = (
+				CE8FDB7BB50D699725E32C4C /* Check Pods Manifest.lock */,
 				F510F68A1BF9FAFB0042175C /* Sources */,
 				F510F68B1BF9FAFB0042175C /* Frameworks */,
 				F510F68C1BF9FAFB0042175C /* Resources */,
+				FCE0D84E329623544CD5D88B /* Embed Pods Frameworks */,
+				B4D84A6054898AB3EEAE593C /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -317,6 +344,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B4D84A6054898AB3EEAE593C /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE8FDB7BB50D699725E32C4C /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FCE0D84E329623544CD5D88B /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F510F68A1BF9FAFB0042175C /* Sources */ = {
@@ -471,6 +546,7 @@
 		};
 		F510F6BA1BF9FAFB0042175C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6584C3306C415EC06BAF3358 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = QEDSWift/Info.plist;
@@ -482,6 +558,7 @@
 		};
 		F510F6BB1BF9FAFB0042175C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81CC9A8017E35D6304F1341C /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = QEDSWift/Info.plist;
@@ -558,6 +635,7 @@
 				F510F6BB1BF9FAFB0042175C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F510F6BC1BF9FAFB0042175C /* Build configuration list for PBXNativeTarget "QEDSWiftTests" */ = {
 			isa = XCConfigurationList;
@@ -566,6 +644,7 @@
 				F510F6BE1BF9FAFB0042175C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F510F6BF1BF9FAFB0042175C /* Build configuration list for PBXNativeTarget "QEDSWiftUITests" */ = {
 			isa = XCConfigurationList;
@@ -574,6 +653,7 @@
 				F510F6C11BF9FAFB0042175C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
