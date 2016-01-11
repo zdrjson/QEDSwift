@@ -29,6 +29,7 @@ class FirstVc: UIViewController ,UITableViewDelegate,UITableViewDataSource{
         super.viewDidLoad()
 
         view.addSubview(tableView)
+
     }
     
 }
