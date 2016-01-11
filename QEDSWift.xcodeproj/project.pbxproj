@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2774531B1C43A4A900790215 /* QEDUserLevelModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2774531A1C43A4A900790215 /* QEDUserLevelModel.swift */; };
 		E240D732D7A45D4FBCF7B693 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCF66EBAA047FE49D859A110 /* Pods.framework */; };
 		F510F6921BF9FAFB0042175C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F510F6911BF9FAFB0042175C /* AppDelegate.swift */; };
 		F510F6941BF9FAFB0042175C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F510F6931BF9FAFB0042175C /* ViewController.swift */; };
@@ -44,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2774531A1C43A4A900790215 /* QEDUserLevelModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QEDUserLevelModel.swift; sourceTree = "<group>"; };
 		6584C3306C415EC06BAF3358 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		81CC9A8017E35D6304F1341C /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		DCF66EBAA047FE49D859A110 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -97,6 +99,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		277453161C43A34400790215 /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				F510F6C71BF9FB590042175C /* FirstVc.swift */,
+				2774531A1C43A4A900790215 /* QEDUserLevelModel.swift */,
+			);
+			name = Discover;
+			sourceTree = "<group>";
+		};
+		277453171C43A36300790215 /* invsetmentProduct */ = {
+			isa = PBXGroup;
+			children = (
+				F510F6C91BF9FB590042175C /* SecondVc.swift */,
+			);
+			name = invsetmentProduct;
+			sourceTree = "<group>";
+		};
+		277453181C43A37000790215 /* MyFinance */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = MyFinance;
+			sourceTree = "<group>";
+		};
+		277453191C43A37700790215 /* MyAccount */ = {
+			isa = PBXGroup;
+			children = (
+				F510F6CA1BF9FB590042175C /* ThirdVc.swift */,
+			);
+			name = MyAccount;
+			sourceTree = "<group>";
+		};
 		2B94D0A1B84130A68442B5EF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -183,10 +217,11 @@
 		F510F6C61BF9FB590042175C /* TabBarChildVc */ = {
 			isa = PBXGroup;
 			children = (
-				F510F6C71BF9FB590042175C /* FirstVc.swift */,
+				277453161C43A34400790215 /* Discover */,
+				277453171C43A36300790215 /* invsetmentProduct */,
+				277453191C43A37700790215 /* MyAccount */,
+				277453181C43A37000790215 /* MyFinance */,
 				F510F6C81BF9FB590042175C /* FourthVc.swift */,
-				F510F6C91BF9FB590042175C /* SecondVc.swift */,
-				F510F6CA1BF9FB590042175C /* ThirdVc.swift */,
 			);
 			path = TabBarChildVc;
 			sourceTree = "<group>";
@@ -398,6 +433,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2774531B1C43A4A900790215 /* QEDUserLevelModel.swift in Sources */,
 				F510F6D01BF9FB590042175C /* ThirdVc.swift in Sources */,
 				F510F69A1BF9FAFB0042175C /* QEDSWift.xcdatamodeld in Sources */,
 				F510F6D31BFA029D0042175C /* NavVc.swift in Sources */,
