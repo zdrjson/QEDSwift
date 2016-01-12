@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2774531E1C43A8A800790215 /* QEDCommonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2774531D1C43A8A800790215 /* QEDCommonModel.swift */; };
+		27F775511C450533002BD5E2 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F775501C450533002BD5E2 /* AppConfig.swift */; };
 		E240D732D7A45D4FBCF7B693 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCF66EBAA047FE49D859A110 /* Pods.framework */; };
 		F510F6921BF9FAFB0042175C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F510F6911BF9FAFB0042175C /* AppDelegate.swift */; };
 		F510F6941BF9FAFB0042175C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F510F6931BF9FAFB0042175C /* ViewController.swift */; };
@@ -46,6 +47,7 @@
 
 /* Begin PBXFileReference section */
 		2774531D1C43A8A800790215 /* QEDCommonModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QEDCommonModel.swift; sourceTree = "<group>"; };
+		27F775501C450533002BD5E2 /* AppConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
 		6584C3306C415EC06BAF3358 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		81CC9A8017E35D6304F1341C /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		DCF66EBAA047FE49D859A110 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -202,6 +204,7 @@
 			children = (
 				F510F6C31BF9FB590042175C /* MyTabBarVc.swift */,
 				2774531D1C43A8A800790215 /* QEDCommonModel.swift */,
+				27F775501C450533002BD5E2 /* AppConfig.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -443,6 +446,7 @@
 				F510F6CB1BF9FB590042175C /* MyTabBarVc.swift in Sources */,
 				F510F6921BF9FAFB0042175C /* AppDelegate.swift in Sources */,
 				F510F6CF1BF9FB590042175C /* SecondVc.swift in Sources */,
+				27F775511C450533002BD5E2 /* AppConfig.swift in Sources */,
 				F510F6D61BFA063A0042175C /* UIImage+Extension.swift in Sources */,
 				F510F6CE1BF9FB590042175C /* FourthVc.swift in Sources */,
 			);
