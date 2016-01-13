@@ -101,10 +101,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		277453161C43A34400790215 /* Discover */ = {
+		275915A61C45E27B005B7214 /* Vc */ = {
 			isa = PBXGroup;
 			children = (
 				F510F6C71BF9FB590042175C /* FirstVc.swift */,
+			);
+			name = Vc;
+			sourceTree = "<group>";
+		};
+		275915A71C45E81B005B7214 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		275915A81C45E824005B7214 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		277453161C43A34400790215 /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				275915A81C45E824005B7214 /* Model */,
+				275915A71C45E81B005B7214 /* ViewModel */,
+				275915A61C45E27B005B7214 /* Vc */,
 			);
 			name = Discover;
 			sourceTree = "<group>";
