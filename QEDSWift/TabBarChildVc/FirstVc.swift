@@ -65,8 +65,8 @@ class FirstVc: UIViewController ,UITableViewDelegate,UITableViewDataSource {
                                               "userId":"",
                                               "type":"0"]
         print(params)
-        
-        Alamofire.request(.POST, "http://tapi.51qed.com/app/products/getProductInfo", parameters: params, encoding: .JSON).responseJSON { response in
+        print(JAVA_API_Server + "products/getProductInfo")
+        Alamofire.request(.POST,  JAVA_API_Server + "app/products/getProductInfo", parameters: params, encoding: .JSON).responseJSON { response in
             print(response.request)  // original URL request
             print(response.response) // URL response
             print(response.data)     // server data
