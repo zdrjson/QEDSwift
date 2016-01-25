@@ -8,6 +8,7 @@
 
 import UIKit
 import Alamofire
+import SwiftyJSON
 class FirstVc: UIViewController ,UITableViewDelegate,UITableViewDataSource {
 
     var dataArray = [String]()
@@ -64,16 +65,25 @@ class FirstVc: UIViewController ,UITableViewDelegate,UITableViewDataSource {
                                               "order":orderId,
                                               "userId":"",
                                               "type":"0"]
-        print(params)
-        print(JAVA_API_Server + "products/getProductInfo")
+//        print(params)
         Alamofire.request(.POST,  JAVA_API_Server + "app/products/getProductInfo", parameters: params, encoding: .JSON).responseJSON { response in
-            print(response.request)  // original URL request
-            print(response.response) // URL response
-            print(response.data)     // server data
-            print(response.result)   // result of response serialization
+//            print(response.request)  // original URL request
+//            print(response.response) // URL response
+//            print(response.data)     // server data
+//            print(response.result)   // result of response serialization
             
-            if let JSON = response.result.value {
-                print("JSON: \(JSON)")
+//            if let JSON = response.result.value {
+////                print("JSON: \(JSON)")
+//            }
+            
+            switch response.result {
+             case .Success:
+                    if let value  = response.result.value {
+                    let json = JSON(value)
+                        print("JSON: \(json)")
+                }
+              case .Failure(let error):
+                print(error)
             }
         }
         
