@@ -1,10 +1,10 @@
 //
-//  Resource.swift
+//  ThreadHelper.swift
 //  Kingfisher
 //
-//  Created by Wei Wang on 15/4/6.
+//  Created by Wei Wang on 15/10/9.
 //
-//  Copyright (c) 2015 Wei Wang <onevcat@gmail.com>
+//  Copyright (c) 2016 Wei Wang <onevcat@gmail.com>
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
 //  of this software and associated documentation files (the "Software"), to deal
@@ -26,12 +26,12 @@
 
 import Foundation
 
-public struct Resource {
-    public let cacheKey: String
-    public let downloadURL: NSURL
-    
-    public init(downloadURL: NSURL, cacheKey: String? = nil) {
-        self.downloadURL = downloadURL
-        self.cacheKey = cacheKey ?? downloadURL.absoluteString
+func dispatch_async_safely_main_queue(block: ()->()) {
+    if NSThread.isMainThread() {
+        block()
+    } else {
+        dispatch_async(dispatch_get_main_queue()) {
+            block()
+        }
     }
 }
